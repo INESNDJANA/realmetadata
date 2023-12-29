@@ -1,0 +1,2 @@
+Name,"Modified Time","Change Time","Access Time","Created Time",Size,"Flags(Dir)","Flags(Meta)",Known,Location,"MD5 Hash","SHA-256 Hash","MIME Type",Extension
+system.log,"2021-02-19 20:53:32 WAT","2021-02-19 20:53:32 WAT","2021-02-15 16:58:24 WAT","2021-02-15 16:58:24 WAT",1073700,Allocated,Allocated,unknown,"/img_macOS-BigSur.E01/vol_vol5/APFS Pool/vol_vol0/private/var/log/system.log","58eeeaf056d1ecc0a7461a3f78bddb58","2aa18daa536a72ffadcf97498bd8a32c9b5c74a063f8f6726ed786c5b3ead848",text/x-log,log
