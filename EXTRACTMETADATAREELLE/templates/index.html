@@ -1,23 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metadata Extraction</title>
-    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            width: 80%;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        label {
+            margin-top: 20px;
+        }
+
+        input[type="file"] {
+            margin: 20px auto;
+            padding: 10px;
+            width: 70%;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            text-align: center;
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 18px;
+            display: block;
+            width: 50%;
+            margin: 20px auto;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Metadata Extraction</h1>
-    
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <label for="folder">Choose a folder:</label>
-        <input type="file" id="folder" name="folder" webkitdirectory directory multiple>
-        <br>
-        <input type="submit" value="Upload Folder">
-    </form>
-    
-    {% if error %}
-        <p style="color: red;">{{ error }}</p>
+    <div class="container">
+        <h1>Welcome to Metadata Extraction</h1>
+        
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="folder">Choose a folder:</label>
+            <input type="file" id="folder" name="folder" webkitdirectory directory multiple>
+            <input type="submit" value="Upload Folder">
+        </form>
+         
+      {% if error %}
+       <p>{{ error }}</p>
     {% endif %}
+        <!-- Le message d'erreur sera ici -->
+    </div>
 </body>
 </html>
+
+

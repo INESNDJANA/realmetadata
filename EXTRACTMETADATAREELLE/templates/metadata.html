@@ -10,9 +10,23 @@
 <body>
     <div class="container">
         <h1>Métadonnées Extraites</h1>
-        <ul id="metadataList"></ul>
-        <a href="{{ url_for('index') }}">Retour à la sélection du dossier</a>
+
+        <div id="metadataTablesContainer">
+            <!-- Les tableaux de métadonnées seront ajoutés ici par script.js -->
+        </div>
+
+        <!-- Boutons de Pagination -->
+        <div id="pagination-container">
+            <button id="prev-btn">Page précédente</button>
+            <button id="next-btn">Page suivante</button>
+        </div>
+        
+        <div class="button-container">
+            <a href="{{ url_for('index') }}" id="back-btn">Return</a>
+            <a href="{{ url_for('download_metadata') }}" id="download-btn" class="download-btn">Download</a>
+        </div>
     </div>
+
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
