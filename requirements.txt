@@ -1,0 +1,9 @@
+Flask
+PyPDF2
+python-docx
+openpyxl
+python-pptx
+Pillow
+moviepy
+Werkzeug
+mutagen
